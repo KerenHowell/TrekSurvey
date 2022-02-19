@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7bfe64ecab.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1 id="title"> Star Trek Fan Survey</h1>
+        <p id = "description">Just for fun - a short survey about my favourite TV show!></p>
+        <!-- Personal details -->
+        <div>
+            <form id="survey-form"action="" >
+                <div>
+                <label id="name-label"for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your name"required>
+        </div>
+            <div>
+                <label id=email-label for="email">Email :</label>
+                <input id ="email" type="email" placeholder="Your email address" required>
+            </div>
+            <div>
+                <label id= "number-label" for="number"> Age &#40;optional&#41;: </label>
+                <input id="number" type="number" min="18" max="100" placeholder="Minimum age 18">
+            </div>
+            <!-- Opinions -->
+            <div class="questions">
+                <h2 class="subhead">What's your favourite Star Trek series? </h2> 
+                    <p> 	&#40;Sorry, you can only choose one!&#41;</p> 
+                    <select name="series" id="dropdown">
+                        <option value="">--Please choose an option--</option>
+                        <option value="TOS">The Original Series</option>
+                        <option value="TNG">The Next Generation</option>
+                        <option value="DS9">Deep Space Nine</option>
+                        <option value="Voy">Voyager</option>
+                        <option value="Dis">Discovery</option>
+                    </select>
+                    <div>
+            
+            </div>
+            <div> 
+                <h2 class="subhead">Have you seen any of the following series?</h2></div>
+                <div class=check>
+        <div>
+                   
+        <input type="checkbox" id="AS" name="AS" value="Y">
+         <label for="AS">The Animated Series</label>
+       </div>
+       
+       <div>
+         <input type="checkbox" id="TLD" name="TLD" value="Y">
+         <label for="TLD">The Lower Decks</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="picard" name="picard" value= "Y">
+            <label for="picard" >Picard</label>
+        </div>
+            </div>
+</div>
+<div class = "radiobuttons">
+    <h2 class="subhead">Have you ever been to a Sci-fi convention?</h2>
+    <p><input type="radio" id= "1"  name="con" value="1" >
+        <label for="1">I’ve never been to a convention and I don’t want to go to one</label></p>
+        <p><input type="radio" id= "2"  name="con" value="2" >
+            <label for="2">I’ve never been to a convention, but I want to go to one</label></p> 
+            <p><input type="radio" id= "3"  name="con" value="3" >
+                <label for="3">I’ve been to at least one convention, but I won’t go again</label></p> 
+                <p><input type="radio" id= "4"  name="con" value="4" >
+                    <label for="4">I’ve been to at least one  convention, and I want to go again</label></p>
+</div>
+<!-- </div>
+ 
+</div>
+</div>  -->
+<div>
+    <h2 class="subhead">Tell me why you love Star Trek!</h2>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Write your comments here..."></textarea></div>
+    <button id="submit"><i class="fas fa-hand-spock"></i> Submit</i></button>
+<div>
+
+       
+</div>
+    </form>
+    
+    </main>  
+</body>
+</html>
